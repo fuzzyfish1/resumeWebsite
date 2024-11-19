@@ -5,3 +5,4 @@ function greet(name: string): string {
 }
 
 document.body.textContent = greet("world");
+document.body.textContent = greet("bloop");

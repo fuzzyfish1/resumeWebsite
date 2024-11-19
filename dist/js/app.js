@@ -4,3 +4,4 @@ function greet(name) {
     return "hello" + name;
 }
 document.body.textContent = greet("world");
+document.body.textContent = greet("bloop");
