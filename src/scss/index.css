@@ -1,8 +1,9 @@
 /*Base System*/
-body,h1,h2,h3,h4,h5,h6 {
-	font-family: "Lato", sans-serif;
-	color: #FFFFFF;
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+  color: #FFFFFF;
 }
+
 body, html {
   height: 100%;
   color: #FFFFFF;
@@ -20,7 +21,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('../assets/bwMe.jpg');
+  background-image: url("../assets/bwMe.jpg");
   min-height: 100%;
 }
 
@@ -37,8 +38,13 @@ body, html {
 }
 
 /* W3 +  parallax*/
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+.w3-wide {
+  letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+  cursor: pointer;
+}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
@@ -47,40 +53,29 @@ body, html {
     min-height: 400px;
   }
 }
-
 .fill:hover,
 .fill:focus {
   box-shadow: inset 0 0 0 2em var(--hover);
 }
 
-$colors: (
-  fill: #FF0000
-);
-
-@each $button, $color in $colors {
-  .#{$button} {
-    --color: #{$color};
-    --hover: #{$color};
-  }
+.fill {
+  --color: #FF0000;
+  --hover: #FF0000;
 }
 
 .colorText {
   color: #FF0000;
 }
 
-// Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.
 button {
   color: var(--color);
   transition: 0.25s;
-
-  &:hover,
-  &:focus {
-    border-color: var(--hover);
-    color: #fff;
-  }
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
 }
 
-// Basic button styles
 button {
   background: none;
   border: 2px solid;
@@ -99,5 +94,7 @@ button {
 }
 
 .bContainer a {
-  margin: 0.5em 0.5em .5em .5em;
+  margin: 0.5em 0.5em 0.5em 0.5em;
 }
+
+/*# sourceMappingURL=index.css.map */

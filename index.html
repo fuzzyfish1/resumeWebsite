@@ -1,209 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale-1.0" name="viewport">
 
-	<title>Zain Ali | Engineering</title>
-	<link rel="icon" href="./Pics/letterZ.jpg">
+    <title>Zain Ali | Engineering</title>
+    <link href="dist/assets/letterZ.jpg" rel="icon">
 
-	<link rel="stylesheet" href="css/index.css">
+    <link href="dist/css/index.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-	<!--<script src="src/app.js"></script>-->
 
+<!--TODO:
+    rewrite modal code for enlarging pictures and giving some kind of description
+    maybe scroll through for pictures from the same project, idk exactly
+    change out the color for the to the top button to be pure white
+-->
+
+<!--NAV BAR-->
 <div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
-  <!-- Navbar on small screens -->
-	<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
+    <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right tglMenu" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a class="w3-bar-item w3-button" href="#home">HOME</a>
+        <a class="w3-bar-item w3-button w3-hide-small" href="#about"><i class="fa fa-user"></i> ABOUT</a>
+        <a class="w3-bar-item w3-button w3-hide-small" href="#portfolio"><i class="fa fa-th"></i> PORTFOLIO</a>
+        <a class="w3-bar-item w3-button w3-hide-small" href="#connect"><i class="fa fa-envelope"></i> CONNECT</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" id="navDemo">
+        <a class="w3-bar-item w3-button tglMenu" href="#about">ABOUT</a>
+        <a class="w3-bar-item w3-button tglMenu" href="#portfolio">PORTFOLIO</a>
+        <a class="w3-bar-item w3-button tglMenu" href="#connect">CONNECT</a>
+    </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
+<!--id = home-->
 <div class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide"><span class="w3-hide-small"></span> Zain Ali, Engineer</span>
-  </div>
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">Zain Ali<span class="w3-hide-small">, Engineer</span></span>
+    </div>
 </div>
 
-<!-- Container (About Section) -->
+<!--id=about-->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>Engineer - Maker</em></p>
-  <p>Roles:
-	<ul>
-		<li>UIC Engineering MakerSpace Machine Shop Employee </li>
-                <li>Engineering Design Team Nasa Lunabotics (RMC) Software Engineer </li>
-                <li>Chicago Hyperloop Treasurer, former President </li>
-                <li>Student pursuing B.S. Comp Sci, Minor M.E. </li>
-                <li>FTC Software Engineering Mentor </li>
-	</ul>
+    <h3 class="w3-center colorText">ABOUT ME</h3>
+    <p class="w3-center"><em>Engineer - Maker</em></p>
+    <p class="colorText">Roles:</p>
+    <p>
+        <ul>
+            <li>UIC Engineering MakerSpace Machine Shop Employee</li>
+            <li>Engineering Design Team Nasa Lunabotics (RMC) Software Engineer</li>
+            <li>Chicago Hyperloop Treasurer, former President</li>
+            <li>Student pursuing B.S. Comp Sci, Minor M.E.</li>
+            <li>FTC Software Engineering Mentor</li>
+            <li>FRC team #2338 Alumni</li>
+        </ul>
+    </p>
+    <p class="colorText"> Technical Experience:</p>
+    <p>
+    <ul>
+        <li>Embedded Systems, Iot, KiCad, C</li>
+        <li>Software Engineering, C, C++, Python, Java</li>
+        <li>Linux, Docker, Network Protocols</li>
+        <li>Robotics, ROS2 humble, Autodesk Inventor</li>
+    </ul>
+    </p>
 
-	Technical Experience:
-	<ul>
-		<li>Embedded Systems, Iot, KiCad, C</li>
-		<li>Software Engineering, C, C++, Python, Java</li>
-		<li>Linux, Docker, Network Protocols</li>
-		<li>Robotics, ROS2 humble, Autodesk Inventor</li>
-	</ul>
+    <div class="w3-row w3-hide-small">
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <p><b><i class="fa fa-user w3-margin-right"></i>Zain Ali</b></p><br>
+            <img alt="Photo of Me" class="w3-round w3-image" height="333" src="dist/assets/MePic.jpg" width="500">
+        </div>
 
-
-                    </p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Zain Ali</b></p><br>
-      <img src="./Pics/MePic.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-padding-large">
+            <p>Being a maker is about bringing ideas to life by harnessing engineering, innovation, art, and science.
+                It’s about belonging to communities that thrive on creativity, sharing, and collaboration—a movement to
+                help others, to give back, and to make a real impact where it couldn’t be made before.
+                It’s the thrill of spending long nights designing, breaking, and rebuilding robots with friends just to
+                earn
+                points in a NASA sand pit. It’s chasing after ideas that are too cool to ignore—projects that are
+                badass, funny,
+                and entirely original. At its core, being a maker is about building things that reflect who I am, while
+                pushing
+                the boundaries of what I can create. Each project is an expression of my curiosity, drive, and
+                creativity. It’s
+                a journey where I challenge myself, connect with others, and leave something meaningful behind.
+            </p>
+        </div>
     </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Being a maker is about bringing ideas to life by harnessing engineering, innovation, art, and science. It’s about belonging to communities that thrive on creativity, sharing, and collaboration—a movement to help others, to give back, and to make a real impact where it couldn’t be made before.
- It’s the thrill of spending long nights designing, breaking, and rebuilding robots with friends just to earn 
-points in a NASA sand pit. It’s chasing after ideas that are too cool to ignore—projects that are badass, funny, 
-and entirely original. At its core, being a maker is about building things that reflect who I am, while pushing
- the boundaries of what I can create. Each project is an expression of my curiosity, drive, and creativity. It’s
- a journey where I challenge myself, connect with others, and leave something meaningful behind.
-</p>
-    </div>
-  </div>
 </div>
 
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
+<!--parallax id=portfolio-->
+<div class="bgimg-2 w3-display-container" id="portfolio">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">PORTFOLIO</span>
+    </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <!--<p class="w3-center"><em>Recent Projects<br>Hover over the images to see more</em></p><br>-->
+<div class="w3-content w3-container w3-padding-64">
+    <h3 class="w3-center colorText">MY WORK</h3>
+    <p class="w3-center"><em>proof of experience</em></p><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="./Pics/connectorPCB.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="connectorBoards">
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3 w3-hide-small">
+            <img alt="connectorBoards" class="w3-hover-opacity" onclick="onClick(this)" src="dist/assets/connectorPCB.jpg"
+                 style="width:100%">
+        </div>
+
+        <div class="w3-col m3">
+            <img alt="Docker Wifi Speaker" class="w3-hover-opacity" onclick="onClick(this)" src="dist/assets/SpeakerSys.jpg"
+                 style="width:100%">
+        </div>
+
+        <div class="w3-col m3 w3-hide-small">
+            <img alt="Tensegrity table" class="w3-hover-opacity" onclick="onClick(this)" src="dist/assets/tensegrity.jpg"
+                 style="width:100%">
+        </div>
+
+        <div class="w3-col m3 w3-hide-small">
+            <img alt="throwing dart, lathe machined brass" class="w3-hover-opacity" onclick="onClick(this)" src="dist/assets/Dart.jpg"
+                 style="width:100%">
+        </div>
     </div>
 
-    <div class="w3-col m3">
-      <img src="./Pics/SpeakerSys.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+            <img alt="mythbusters logo, waterjet aluminum and lasercut acrylic" class="w3-hover-opacity" onclick="onClick(this)" src="dist/assets/MythBusters.jpg"
+                 style="width:100%">
+        </div>
 
-    <div class="w3-col m3">
-      <img src="./Pics/tensegrity.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
+        <div class="w3-col m3">
+            <img alt="high voltage control board" class="w3-hover-opacity" onclick="onClick(this)" src="dist/assets/PCB.jpg"
+                 style="width:100%">
+        </div>
 
-    <div class="w3-col m3">
-      <img src="./Pics/Dart.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
+        <div class="w3-col m3 w3-hide-small">
+            <img alt="the makerspace I work at" class="w3-hover-opacity" onclick="onClick(this)"
+                 src="dist/assets/MakerspacePrinter.jpg" style="width:100%">
+        </div>
 
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="./Pics/MythBusters.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+        <div class="w3-col m3">
+            <img alt="FRC prototype robot" class="w3-hover-opacity" onclick="onClick(this)" src="dist/assets/FRCPic.jpg"
+                 style="width:100%">
+        </div>
     </div>
-
-    <div class="w3-col m3">
-      <img src="./Pics/PCB.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="./Pics/MakerspacePrinter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="./Pics/FRCPic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-  </div>
 </div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
+<!-- Modal for full size images on click I think remove this-->
+<!--
+<div class="w3-modal w3-black" id="modal01" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img class="w3-image" id="img01">
+        <p class="w3-opacity w3-large" id="caption"></p>
+    </div>
+</div>
+-->
+<!-- Third Parallax Image with Portfolio Text id = connect-->
+<div class="bgimg-3 w3-display-container" id = "connect">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-xlarge w3-black w3-wide">Stay Connected<span class="w3-hide-small"> :)</span></span>
+    </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
+<!--
+<div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide"><span class="w3-hide-small"></span>
+-->
+
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">INFORMATION</h3>
-  <p class="w3-center"><em>Contact</em></p>
-    <!--phone #-->
-    <a><button class="fill"></button></a>
-  <p class="w3-center"><em>Hire Me</em></p>
-  <p class="w3-center"><em>Work Experience</em> </p>
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
+<div class="w3-content w3-container w3-padding-64">
+    <h3 class="w3-center colorText">CONNECT</h3>
+    <p class="w3-center">Professional Links</p>
+    <div class="w3-row w3-section w3-center bContainer">
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-<!--
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
--->
-</footer>
+        <a href="https://www.linkedin.com/in/zain-ali-28b626227"><button class="fill">
+            <i class="fa fa-linkedin"></i>
+        </button></a>
+
+        <a href="dist/assets/resume.pdf">
+            <button class="fill">Resume</button>
+        </a>
+        <a href="https://github.com/fuzzyfish1">
+            <button class="fill"><i class="fa fa-github"></i></button>
+        </a>
+
+    </div>
+
+    <div class="w3-row w3-padding-32 w3-section">
+        <p class="w3-center colorText">CONTACT</p>
+        <div class="w3-large w3-margin-bottom">
+            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +01 786-823-9246 |
+            text preferred<br>
+            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+            zain@accucalc.com<br>
+        </div>
+    </div>
+
+    <div class="w3-row w3-center">
+        <a class="w3-button w3-white" href="#home"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    </div>
+
+    <script src="dist/js/app.js"></script>
+</div>
 </body>
 </html>
